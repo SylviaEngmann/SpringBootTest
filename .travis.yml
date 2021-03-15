@@ -1,9 +1,14 @@
 language: java
+
 sudo: true
+
 jdk:
   - openjdk15
+
 script: ./gradlew build --scan -s
+
 before_install: chmod +x gradlew
+
 jobs:
   include:
     - stage: test
