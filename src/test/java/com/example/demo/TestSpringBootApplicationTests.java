@@ -9,7 +9,6 @@ class TestSpringBootApplicationTests {
 
 	@Test
 	void returnInteger() {
-		//assertEquals(5,5);
 	}
 
 
