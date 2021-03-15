@@ -7,7 +7,7 @@ before_install: chmod +x gradlew
 jobs:
   include:
     - stage: test
-      script: ./gradlew test
+      script: ./gradlew clean test
 #deploy:
 #  provider: heroku
 #  api_key: $heroku_api_key
