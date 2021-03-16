@@ -19,6 +19,7 @@ env:
 before_script:
   - psql --version
   - psql -c 'create database student;' -U travis
+  - psql -f './sql/test.sql -d student;' -U travis
 jobs:
   include:
     - stage: test
