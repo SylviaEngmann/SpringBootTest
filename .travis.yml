@@ -27,9 +27,8 @@ jobs:
   include:
     - stage: test
       script: ./gradlew test
-#deploy:
-#  provider: heroku
-#  api_key: $heroku_api_key
-#  app: testSpringBoot
-#  on:
-#    dev
+deploy:
+  provider: heroku
+  api_key: $heroku_api_key
+  app: student-spring-test
+  on: master
