@@ -17,6 +17,7 @@ env:
     - PGPORT=5433
     - PGUSER=travis
 before_script:
+  - psql --version
   - psql -c 'create database student;' -U travis
 jobs:
   include:
