@@ -1,4 +1,4 @@
-CREATE DATABASE `student`;
+CREATE DATABASE student;
 
 create table student
 (
